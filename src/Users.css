@@ -1,0 +1,22 @@
+.loading {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    text-align: center;
+    display: grid;
+    animation-name: spin;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+.loading > * {
+    margin: auto;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
